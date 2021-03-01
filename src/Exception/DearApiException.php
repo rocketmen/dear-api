@@ -11,9 +11,11 @@
  *
  */
 
-namespace UmiMood\Dear\Exception;
+namespace Rocketmen\Dear\Exception;
 
-class DearApiException extends \Exception
+use Exception;
+
+class DearApiException extends Exception
 {
     protected $statusCode;
 

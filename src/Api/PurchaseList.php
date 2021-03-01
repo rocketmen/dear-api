@@ -11,7 +11,7 @@
  *
  */
 
-namespace UmiMood\Dear\Api;
+namespace Rocketmen\Dear\Api;
 
 class PurchaseList extends BaseApi
 {

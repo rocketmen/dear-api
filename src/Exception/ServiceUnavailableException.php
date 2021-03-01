@@ -11,7 +11,7 @@
  *
  */
 
-namespace UmiMood\Dear\Exception;
+namespace Rocketmen\Dear\Exception;
 
 class ServiceUnavailableException extends DearApiException
 {

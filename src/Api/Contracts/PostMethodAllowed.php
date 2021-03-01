@@ -11,7 +11,7 @@
  *
  */
 
-namespace UmiMood\Dear\Api\Contracts;
+namespace Rocketmen\Dear\Api\Contracts;
 
 interface PostMethodAllowed
 {

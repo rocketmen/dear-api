@@ -11,7 +11,7 @@
  *
  */
 
-namespace UmiMood\Dear;
+namespace Rocketmen\Dear;
 
 class Config
 {

@@ -11,11 +11,11 @@
  *
  */
 
-namespace UmiMood\Dear\Api;
+namespace Rocketmen\Dear\Api;
 
-use UmiMood\Dear\Api\Contracts\DeleteMethodAllowed as DeleteContract;
-use UmiMood\Dear\Api\Contracts\PostMethodAllowed as PostContract;
-use UmiMood\Dear\Api\Contracts\PutMethodAllowed as PutContract;
+use Rocketmen\Dear\Api\Contracts\DeleteMethodAllowed as DeleteContract;
+use Rocketmen\Dear\Api\Contracts\PostMethodAllowed as PostContract;
+use Rocketmen\Dear\Api\Contracts\PutMethodAllowed as PutContract;
 
 class Brand extends BaseApi implements PostContract, PutContract, DeleteContract
 {

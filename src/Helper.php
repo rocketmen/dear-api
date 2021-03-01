@@ -11,9 +11,9 @@
  *
  */
 
-namespace UmiMood\Dear;
+namespace Rocketmen\Dear;
 
-use UmiMood\Dear\Api\BaseApi;
+use Rocketmen\Dear\Api\BaseApi;
 
 class Helper
 {

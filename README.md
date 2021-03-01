@@ -1,18 +1,19 @@
 # dear-api
-[![Build Status](https://travis-ci.com/UmiMood/dear-api.svg?token=4CfuxCuzvs5i12ZugsAZ&branch=master)](https://travis-ci.com/UmiMood/dear-api)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/UmiMood/dear-api/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/UmiMood/dear-api/?branch=master)
+
+A fork of https://github.com/UmiMood/dear-api.
+
 PHP Library for [dear systems](https://dearinventory.docs.apiary.io) API v2.
 
 ## Requirements
 
-* PHP 7.1+
-* guzzlehttp/guzzle 6.3+
+* PHP 7.4+
+* guzzlehttp/guzzle 7.2+
 * ext-json extension
 
 ## Installation
 
 ```bash
-composer require umimood/dearapi
+composer require rocketmen/dearapi
 ```
 
 Otherwise just download the package and add it to the autoloader.
@@ -25,7 +26,7 @@ Otherwise just download the package and add it to the autoloader.
 
 Create a Dear instance.
 ```php
-$dear = UmiMood\Dear\Dear::create("DEAR-ACCOUNT_ID", "DEAR-APPLICATION-KEY");
+$dear = Rocketmen\Dear\Dear::create("DEAR-ACCOUNT_ID", "DEAR-APPLICATION-KEY");
 ```
 
 Get data from API

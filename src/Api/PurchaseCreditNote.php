@@ -11,9 +11,9 @@
  *
  */
 
-namespace UmiMood\Dear\Api;
+namespace Rocketmen\Dear\Api;
 
-use UmiMood\Dear\Api\Contracts\PostMethodAllowed as PostContract;
+use Rocketmen\Dear\Api\Contracts\PostMethodAllowed as PostContract;
 
 class PurchaseCreditNote extends BaseApi implements PostContract
 {

@@ -11,10 +11,10 @@
  *
  */
 
-namespace UmiMood\Dear\Api;
+namespace Rocketmen\Dear\Api;
 
-use UmiMood\Dear\Api\Contracts\DeleteMethodAllowed as DeleteContract;
-use UmiMood\Dear\Api\Contracts\PostMethodAllowed as PostContract;
+use Rocketmen\Dear\Api\Contracts\DeleteMethodAllowed as DeleteContract;
+use Rocketmen\Dear\Api\Contracts\PostMethodAllowed as PostContract;
 
 class FinishedGoods extends BaseApi implements PostContract, DeleteContract
 {
