@@ -1,5 +1,5 @@
 {
-    "name": "rocketmen/dearapi",
+    "name": "rocketmen/dear-api",
     "description": "PHP Library for dear systems API v2 https://dearinventory.docs.apiary.io",
     "type": "library",
     "license": "MIT",
