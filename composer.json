@@ -5,8 +5,8 @@
     "license": "MIT",
     "minimum-stability": "dev",
     "require": {
-        "php": "^7.4",
-        "guzzlehttp/guzzle": "^7.2",
+        "php": "^8",
+        "guzzlehttp/guzzle": "^7.3",
         "ext-json": "*"
     },
     "autoload": {
