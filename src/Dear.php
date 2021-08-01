@@ -31,20 +31,22 @@ class Dear
      * Dear constructor.
      * @param string $accountId
      * @param string $applicationKey
+     * @param bool|string $verifySSL
      */
-    protected function __construct($accountId = null, $applicationKey = null)
+    protected function __construct($accountId = null, $applicationKey = null, $verifySSL = true)
     {
-        $this->config = new Config($accountId, $applicationKey);
+        $this->config = new Config($accountId, $applicationKey, $verifySSL);
     }
 
     /**
      * @param string $accountId
      * @param string $applicationKey
+     * @param bool|string $verifySSL
      * @return Dear
      */
-    public static function create($accountId = null, $applicationKey = null)
+    public static function create($accountId = null, $applicationKey = null, $verifySSL = true)
     {
-        return (static::$instance) ? static::$instance : new static($accountId, $applicationKey);
+        return (static::$instance) ? static::$instance : new static($accountId, $applicationKey, $verifySSL);
     }
 
     /**

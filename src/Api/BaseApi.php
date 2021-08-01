@@ -76,7 +76,8 @@ abstract class BaseApi implements RESTApi
     {
         try {
             $requestParams = [
-                'headers' => $this->getHeaders()
+                'headers' => $this->getHeaders(),
+                'verify' => $this->config->getVerifySSL(),
             ];
 
             if ($httpMethod == 'POST' || $httpMethod == 'PUT') {

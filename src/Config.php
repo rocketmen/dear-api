@@ -26,14 +26,21 @@ class Config
     protected $applicationKey;
 
     /**
+     * @var bool|string
+     */
+    protected $verifySSL;
+
+    /**
      * Config constructor.
      * @param string $accountId
      * @param string $applicationKey
+     * @param bool|string $verifySSL
      */
-    public function __construct($accountId = null, $applicationKey = null)
+    public function __construct($accountId = null, $applicationKey = null, $verifySSL = true)
     {
         $this->setAccountId($accountId ?: getenv('DEAR_ACCOUNT_ID'));
         $this->setApplicationKey($applicationKey ?: getenv('DEAR_APPLICATION_KEY'));
+        $this->setVerifySSL($verifySSL);
     }
 
     /**
@@ -66,5 +73,21 @@ class Config
     public function setApplicationKey($applicationKey)
     {
         $this->applicationKey = $applicationKey;
+    }
+
+    /**
+     * @return bool|string
+     */
+    public function getVerifySSL()
+    {
+        return $this->verifySSL;
+    }
+
+    /**
+     * @param bool|string $verifySSL
+     */
+    public function setVerifySSL($verifySSL)
+    {
+        $this->verifySSL = $verifySSL;
     }
 }
