@@ -18,6 +18,7 @@ use Exception;
 class DearApiException extends Exception
 {
     protected $statusCode;
+    protected $responseContent;
 
     public function getStatusCode()
     {
@@ -27,5 +28,15 @@ class DearApiException extends Exception
     public function setStatusCode($statusCode)
     {
         $this->statusCode = $statusCode;
+    }
+
+    public function getResponseContent()
+    {
+        return $this->responseContent;
+    }
+
+    public function setResponseContent($responseContent)
+    {
+        $this->responseContent = $responseContent;
     }
 }
