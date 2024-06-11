@@ -17,8 +17,8 @@ use Exception;
 
 class DearApiException extends Exception
 {
-    protected $statusCode;
-    protected $responseContent;
+    public $statusCode;
+    public $responseContent;
 
     public function getStatusCode()
     {
